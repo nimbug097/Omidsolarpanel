@@ -1,0 +1,1243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>X Solar Solutions | Clean Energy for Tomorrow</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.card-hover:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.transition-all {
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #3b82f6;
+}
+
+.active {
+  color: #3b82f6;
+  font-weight: 600;
+}
+
+.section-divider {
+  height: 100px;
+  width: 100%;
+  background: linear-gradient(to bottom right, transparent 49.5%, white 50%),
+    linear-gradient(to bottom left, transparent 49.5%, white 50%);
+  background-size: 50% 100%;
+  background-repeat: no-repeat;
+}
+
+.floating {
+  animation: floating 3s ease-in-out infinite;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+    </style>
+  </head>
+  <body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-md z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+          <div class="flex items-center">
+            <div class="flex-shrink-0 flex items-center">
+              <i class="fas fa-solar-panel text-blue-500 text-3xl mr-2"></i>
+              <span class="text-xl font-bold text-gray-800"
+                >X Solar Solutions</span
+              >
+            </div>
+          </div>
+          <div class="hidden md:ml-6 md:flex md:items-center md:space-x-8">
+            <a
+              href="#home"
+              class="nav-link text-gray-700 hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium transition-all active"
+              >Home</a
+            >
+            <a
+              href="#about"
+              class="nav-link text-gray-700 hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium transition-all"
+              >About</a
+            >
+            <a
+              href="#services"
+              class="nav-link text-gray-700 hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium transition-all"
+              >Services</a
+            >
+            <a
+              href="#advantages"
+              class="nav-link text-gray-700 hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium transition-all"
+              >Advantages</a
+            >
+            <a
+              href="#contact"
+              class="nav-link text-gray-700 hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium transition-all"
+              >Contact</a
+            >
+            <button
+              class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium transition-all"
+            >
+              Get a Quote
+            </button>
+          </div>
+          <div class="-mr-2 flex items-center md:hidden">
+            <button
+              type="button"
+              id="mobile-menu-button"
+              class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none"
+            >
+              <span class="sr-only">Open main menu</span>
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile menu -->
+      <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <a
+            href="#home"
+            class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-500 hover:bg-gray-50"
+            >Home</a
+          >
+          <a
+            href="#about"
+            class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-500 hover:bg-gray-50"
+            >About</a
+          >
+          <a
+            href="#services"
+            class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-500 hover:bg-gray-50"
+            >Services</a
+          >
+          <a
+            href="#advantages"
+            class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-500 hover:bg-gray-50"
+            >Advantages</a
+          >
+          <a
+            href="#contact"
+            class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-500 hover:bg-gray-50"
+            >Contact</a
+          >
+          <button
+            class="w-full mt-2 bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium"
+          >
+            Get a Quote
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient pt-24 pb-16 md:pt-32 md:pb-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="lg:grid lg:grid-cols-2 lg:gap-8 items-center">
+          <div class="mb-12 lg:mb-0">
+            <h1
+              class="text-4xl md:text-5xl font-bold text-gray-800 leading-tight mb-6"
+            >
+              Power Your Home <br />With
+              <span class="text-blue-500">Clean Energy</span>
+            </h1>
+            <p class="text-lg text-gray-600 mb-8">
+              X Solar Solutions provides high-efficiency solar panels with
+              industry-leading warranties. Reduce your electricity bills and
+              carbon footprint with our customized solar solutions.
+            </p>
+            <div
+              class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4"
+            >
+              <button
+                class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-md text-lg font-medium transition-all"
+              >
+                Get Started
+              </button>
+              <button
+                class="border-2 border-blue-500 text-blue-500 hover:bg-blue-50 px-6 py-3 rounded-md text-lg font-medium transition-all"
+              >
+                Learn More
+              </button>
+            </div>
+          </div>
+          <div class="relative">
+            <img
+              src="https://images.pexels.com/photos/356036/pexels-photo-356036.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt="Solar Panels"
+              class="rounded-xl shadow-xl floating transition-all"
+            />
+            <div
+              class="absolute -bottom-6 -left-6 bg-yellow-400 w-24 h-24 rounded-full opacity-20"
+            ></div>
+            <div
+              class="absolute -top-6 -right-6 bg-blue-400 w-32 h-32 rounded-full opacity-20"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="bg-white py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          <div class="p-4">
+            <div class="text-4xl font-bold text-blue-500 mb-2">10K+</div>
+            <div class="text-gray-600">Homes Powered</div>
+          </div>
+          <div class="p-4">
+            <div class="text-4xl font-bold text-blue-500 mb-2">25+</div>
+            <div class="text-gray-600">Years Warranty</div>
+          </div>
+          <div class="p-4">
+            <div class="text-4xl font-bold text-blue-500 mb-2">80%</div>
+            <div class="text-gray-600">Energy Savings</div>
+          </div>
+          <div class="p-4">
+            <div class="text-4xl font-bold text-blue-500 mb-2">24/7</div>
+            <div class="text-gray-600">Customer Support</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-gray-50 py-20">
+      <div class="section-divider"></div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-gray-800 mb-4">
+            About X Solar Solutions
+          </h2>
+          <div class="w-20 h-1 bg-blue-500 mx-auto"></div>
+        </div>
+
+        <div class="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
+          <div class="mb-12 lg:mb-0">
+            <img
+              src="https://images.pexels.com/photos/4549831/pexels-photo-4549831.png?auto=compress&cs=tinysrgb&w=600"
+              alt="About Us"
+              class="rounded-xl shadow-lg transition-all"
+            />
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold text-gray-800 mb-6">
+              Leading the Solar Revolution
+            </h3>
+            <p class="text-gray-600 mb-6">
+              Founded in 2010, X Solar Solutions has been at the forefront of
+              renewable energy solutions, helping homeowners and businesses
+              transition to clean, sustainable power sources. Our mission is to
+              make solar energy accessible, affordable, and efficient for
+              everyone.
+            </p>
+            <p class="text-gray-600 mb-6">
+              With a team of certified professionals and partnerships with top
+              manufacturers, we deliver premium solar solutions tailored to your
+              specific energy needs and budget.
+            </p>
+            <div class="space-y-4">
+              <div class="flex items-start">
+                <div class="flex-shrink-0 mt-1">
+                  <i class="fas fa-check-circle text-green-500 text-xl"></i>
+                </div>
+                <div class="ml-3">
+                  <p class="text-gray-700 font-medium">
+                    Nationwide certified installers
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <div class="flex-shrink-0 mt-1">
+                  <i class="fas fa-check-circle text-green-500 text-xl"></i>
+                </div>
+                <div class="ml-3">
+                  <p class="text-gray-700 font-medium">
+                    Premium quality solar panels
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-start">
+                <div class="flex-shrink-0 mt-1">
+                  <i class="fas fa-check-circle text-green-500 text-xl"></i>
+                </div>
+                <div class="ml-3">
+                  <p class="text-gray-700 font-medium">
+                    Industry-leading warranties
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-gray-800 mb-4">Our Services</h2>
+          <div class="w-20 h-1 bg-blue-500 mx-auto"></div>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Service 1 -->
+          <div
+            class="bg-white rounded-xl shadow-lg p-8 card-hover transition-all"
+          >
+            <div class="text-blue-500 mb-4">
+              <i class="fas fa-home text-4xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-4">
+              Residential Solar
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Custom solar solutions for your home with battery backup options
+              and smart energy monitoring.
+            </p>
+            <a
+              href="#"
+              class="text-blue-500 font-medium inline-flex items-center"
+            >
+              Learn more <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+          </div>
+
+          <!-- Service 2 -->
+          <div
+            class="bg-white rounded-xl shadow-lg p-8 card-hover transition-all"
+          >
+            <div class="text-blue-500 mb-4">
+              <i class="fas fa-building text-4xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-4">
+              Commercial Solar
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Large-scale solar installations for businesses with ROI-focused
+              energy solutions.
+            </p>
+            <a
+              href="#"
+              class="text-blue-500 font-medium inline-flex items-center"
+            >
+              Learn more <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+          </div>
+
+          <!-- Service 3 -->
+          <div
+            class="bg-white rounded-xl shadow-lg p-8 card-hover transition-all"
+          >
+            <div class="text-blue-500 mb-4">
+              <i class="fas fa-solar-panel text-4xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-4">
+              Solar Panel Maintenance
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Professional cleaning, inspection, and repair services to keep
+              your system at peak performance.
+            </p>
+            <a
+              href="#"
+              class="text-blue-500 font-medium inline-flex items-center"
+            >
+              Learn more <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+          </div>
+
+          <!-- Service 4 -->
+          <div
+            class="bg-white rounded-xl shadow-lg p-8 card-hover transition-all"
+          >
+            <div class="text-blue-500 mb-4">
+              <i class="fas fa-battery-three-quarters text-4xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-4">Energy Storage</h3>
+            <p class="text-gray-600 mb-4">
+              Battery storage solutions to maximize your solar investment and
+              provide backup power.
+            </p>
+            <a
+              href="#"
+              class="text-blue-500 font-medium inline-flex items-center"
+            >
+              Learn more <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+          </div>
+
+          <!-- Service 5 -->
+          <div
+            class="bg-white rounded-xl shadow-lg p-8 card-hover transition-all"
+          >
+            <div class="text-blue-500 mb-4">
+              <i class="fas fa-charging-station text-4xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-4">EV Charging</h3>
+            <p class="text-gray-600 mb-4">
+              Solar-powered electric vehicle charging stations for your home or
+              business.
+            </p>
+            <a
+              href="#"
+              class="text-blue-500 font-medium inline-flex items-center"
+            >
+              Learn more <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+          </div>
+
+          <!-- Service 6 -->
+          <div
+            class="bg-white rounded-xl shadow-lg p-8 card-hover transition-all"
+          >
+            <div class="text-blue-500 mb-4">
+              <i class="fas fa-lightbulb text-4xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-gray-800 mb-4">
+              Energy Consultation
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Expert advice on solar solutions, energy efficiency, and
+              cost-saving strategies.
+            </p>
+            <a
+              href="#"
+              class="text-blue-500 font-medium inline-flex items-center"
+            >
+              Learn more <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Advantages Section -->
+    <section id="advantages" class="py-20 bg-gray-50">
+      <div class="section-divider rotate-180"></div>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-gray-800 mb-4">
+            Why Choose Solar?
+          </h2>
+          <div class="w-20 h-1 bg-blue-500 mx-auto"></div>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Advantage 1 -->
+          <div
+            class="bg-white p-8 rounded-xl shadow-md transition-all card-hover"
+          >
+            <div class="flex items-center mb-4">
+              <div class="bg-blue-100 p-3 rounded-full mr-4">
+                <i class="fas fa-wallet text-blue-500 text-xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-800">Cost Savings</h3>
+            </div>
+            <p class="text-gray-600">
+              Solar panels can reduce or eliminate your electricity bills,
+              providing long-term savings. With rising energy costs, solar is a
+              smart financial investment.
+            </p>
+          </div>
+
+          <!-- Advantage 2 -->
+          <div
+            class="bg-white p-8 rounded-xl shadow-md transition-all card-hover"
+          >
+            <div class="flex items-center mb-4">
+              <div class="bg-blue-100 p-3 rounded-full mr-4">
+                <i class="fas fa-leaf text-blue-500 text-xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-800">Eco-Friendly</h3>
+            </div>
+            <p class="text-gray-600">
+              Solar energy is clean, renewable, and reduces your carbon
+              footprint. By going solar, you're helping combat climate change
+              and pollution.
+            </p>
+          </div>
+
+          <!-- Advantage 3 -->
+          <div
+            class="bg-white p-8 rounded-xl shadow-md transition-all card-hover"
+          >
+            <div class="flex items-center mb-4">
+              <div class="bg-blue-100 p-3 rounded-full mr-4">
+                <i class="fas fa-home text-blue-500 text-xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-800">
+                Increased Home Value
+              </h3>
+            </div>
+            <p class="text-gray-600">
+              Homes with solar panels sell for more than homes without. Solar
+              installations are viewed as upgrades, similar to a renovated
+              kitchen.
+            </p>
+          </div>
+
+          <!-- Advantage 4 -->
+          <div
+            class="bg-white p-8 rounded-xl shadow-md transition-all card-hover"
+          >
+            <div class="flex items-center mb-4">
+              <div class="bg-blue-100 p-3 rounded-full mr-4">
+                <i class="fas fa-bolt text-blue-500 text-xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-800">
+                Energy Independence
+              </h3>
+            </div>
+            <p class="text-gray-600">
+              Produce your own power and reduce reliance on the grid. With
+              battery storage, you can have power even during outages.
+            </p>
+          </div>
+
+          <!-- Advantage 5 -->
+          <div
+            class="bg-white p-8 rounded-xl shadow-md transition-all card-hover"
+          >
+            <div class="flex items-center mb-4">
+              <div class="bg-blue-100 p-3 rounded-full mr-4">
+                <i class="fas fa-shield-alt text-blue-500 text-xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-800">Low Maintenance</h3>
+            </div>
+            <p class="text-gray-600">
+              Solar systems require very little maintenance. With no moving
+              parts, they're durable and can last 25+ years with minimal upkeep.
+            </p>
+          </div>
+
+          <!-- Advantage 6 -->
+          <div
+            class="bg-white p-8 rounded-xl shadow-md transition-all card-hover"
+          >
+            <div class="flex items-center mb-4">
+              <div class="bg-blue-100 p-3 rounded-full mr-4">
+                <i class="fas fa-percentage text-blue-500 text-xl"></i>
+              </div>
+              <h3 class="text-xl font-bold text-gray-800">Tax Incentives</h3>
+            </div>
+            <p class="text-gray-600">
+              Federal, state, and local incentives can significantly reduce the
+              cost of going solar. Many homeowners qualify for tax credits and
+              rebates.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-gray-800 mb-4">
+            Our Simple Process
+          </h2>
+          <div class="w-20 h-1 bg-blue-500 mx-auto"></div>
+        </div>
+
+        <div class="relative">
+          <!-- Timeline -->
+          <div
+            class="hidden md:block absolute left-1/2 top-0 h-full w-1 bg-blue-100 transform -translate-x-1/2"
+          ></div>
+
+          <!-- Process Steps -->
+          <div class="space-y-16 md:space-y-0">
+            <!-- Step 1 -->
+            <div class="relative flex flex-col md:flex-row items-center">
+              <div class="md:w-1/2 md:pr-16 mb-8 md:mb-0 text-right">
+                <h3 class="text-xl font-bold text-gray-800 mb-2">
+                  1. Consultation
+                </h3>
+                <p class="text-gray-600">
+                  Schedule a free consultation with our solar experts to discuss
+                  your energy needs and goals.
+                </p>
+              </div>
+              <div
+                class="hidden md:block absolute left-1/2 w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center transform -translate-x-1/2"
+              >
+                <span class="text-white font-bold">1</span>
+              </div>
+              <div class="md:w-1/2 md:pl-16"></div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="relative flex flex-col md:flex-row items-center">
+              <div class="md:w-1/2 md:pr-16 mb-8 md:mb-0 text-right"></div>
+              <div
+                class="hidden md:block absolute left-1/2 w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center transform -translate-x-1/2"
+              >
+                <span class="text-white font-bold">2</span>
+              </div>
+              <div class="md:w-1/2 md:pl-16">
+                <h3 class="text-xl font-bold text-gray-800 mb-2">
+                  2. Custom Design
+                </h3>
+                <p class="text-gray-600">
+                  Our engineers create a personalized solar system design
+                  optimized for your property.
+                </p>
+              </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="relative flex flex-col md:flex-row items-center">
+              <div class="md:w-1/2 md:pr-16 mb-8 md:mb-0 text-right">
+                <h3 class="text-xl font-bold text-gray-800 mb-2">
+                  3. Permitting
+                </h3>
+                <p class="text-gray-600">
+                  We handle all necessary permits and paperwork with your local
+                  authorities.
+                </p>
+              </div>
+              <div
+                class="hidden md:block absolute left-1/2 w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center transform -translate-x-1/2"
+              >
+                <span class="text-white font-bold">3</span>
+              </div>
+              <div class="md:w-1/2 md:pl-16"></div>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="relative flex flex-col md:flex-row items-center">
+              <div class="md:w-1/2 md:pr-16 mb-8 md:mb-0 text-right"></div>
+              <div
+                class="hidden md:block absolute left-1/2 w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center transform -translate-x-1/2"
+              >
+                <span class="text-white font-bold">4</span>
+              </div>
+              <div class="md:w-1/2 md:pl-16">
+                <h3 class="text-xl font-bold text-gray-800 mb-2">
+                  4. Installation
+                </h3>
+                <p class="text-gray-600">
+                  Our certified technicians install your system quickly and
+                  professionally.
+                </p>
+              </div>
+            </div>
+
+            <!-- Step 5 -->
+            <div class="relative flex flex-col md:flex-row items-center">
+              <div class="md:w-1/2 md:pr-16 mb-8 md:mb-0 text-right">
+                <h3 class="text-xl font-bold text-gray-800 mb-2">
+                  5. Activation
+                </h3>
+                <p class="text-gray-600">
+                  Final inspection and connection to the grid. Start generating
+                  clean energy!
+                </p>
+              </div>
+              <div
+                class="hidden md:block absolute left-1/2 w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center transform -translate-x-1/2"
+              >
+                <span class="text-white font-bold">5</span>
+              </div>
+              <div class="md:w-1/2 md:pl-16"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-gray-800 mb-4">
+            What Our Customers Say
+          </h2>
+          <div class="w-20 h-1 bg-blue-500 mx-auto"></div>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Testimonial 1 -->
+          <div
+            class="bg-white p-8 rounded-xl shadow-md transition-all card-hover"
+          >
+            <div class="flex items-center mb-4">
+              <div class="text-yellow-400 mr-2">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+            <p class="text-gray-600 mb-6">
+              "X Solar Solutions made the entire process so easy. My electricity
+              bill has dropped by 80% and the installation was completed in just
+              two days. Highly recommend!"
+            </p>
+            <div class="flex items-center">
+              <div
+                class="w-12 h-12 rounded-full bg-gray-300 mr-4 overflow-hidden"
+              >
+                <img
+                  src="https://randomuser.me/api/portraits/women/43.jpg"
+                  alt="Sarah J."
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div>
+                <h4 class="font-bold text-gray-800">Sarah J.</h4>
+                <p class="text-gray-500 text-sm">Homeowner, California</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div
+            class="bg-white p-8 rounded-xl shadow-md transition-all card-hover"
+          >
+            <div class="flex items-center mb-4">
+              <div class="text-yellow-400 mr-2">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+            <p class="text-gray-600 mb-6">
+              "The team at X Solar was professional from start to finish. They
+              helped us navigate the tax incentives and designed a system that
+              perfectly meets our business needs."
+            </p>
+            <div class="flex items-center">
+              <div
+                class="w-12 h-12 rounded-full bg-gray-300 mr-4 overflow-hidden"
+              >
+                <img
+                  src="https://randomuser.me/api/portraits/men/32.jpg"
+                  alt="Michael T."
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div>
+                <h4 class="font-bold text-gray-800">Michael T.</h4>
+                <p class="text-gray-500 text-sm">Business Owner, Texas</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div
+            class="bg-white p-8 rounded-xl shadow-md transition-all card-hover"
+          >
+            <div class="flex items-center mb-4">
+              <div class="text-yellow-400 mr-2">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+            <p class="text-gray-600 mb-6">
+              "After researching several solar companies, I chose X Solar for
+              their transparency and expertise. Two years later, I'm still
+              thrilled with my decision and the savings."
+            </p>
+            <div class="flex items-center">
+              <div
+                class="w-12 h-12 rounded-full bg-gray-300 mr-4 overflow-hidden"
+              >
+                <img
+                  src="https://randomuser.me/api/portraits/women/65.jpg"
+                  alt="Lisa M."
+                  class="w-full h-full object-cover"
+                />
+              </div>
+              <div>
+                <h4 class="font-bold text-gray-800">Lisa M.</h4>
+                <p class="text-gray-500 text-sm">Homeowner, Florida</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-blue-500 text-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="lg:grid lg:grid-cols-2 lg:gap-8 items-center">
+          <div class="mb-8 lg:mb-0">
+            <h2 class="text-3xl font-bold mb-4">Ready to Go Solar?</h2>
+            <p class="text-blue-100 mb-6">
+              Get a free, no-obligation quote today and discover how much you
+              could save with solar energy.
+            </p>
+            <div
+              class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4"
+            >
+              <button
+                class="bg-white hover:bg-gray-100 text-blue-500 px-6 py-3 rounded-md text-lg font-medium transition-all"
+              >
+                Get Your Quote
+              </button>
+              <button
+                class="border-2 border-white hover:bg-blue-600 px-6 py-3 rounded-md text-lg font-medium transition-all"
+              >
+                Call Now
+              </button>
+            </div>
+          </div>
+          <div class="relative">
+            <img
+              src="https://images.unsplash.com/photo-1508514177221-188e1e464088?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+              alt="Solar Panels"
+              class="rounded-xl shadow-xl transition-all"
+            />
+            <div
+              class="absolute -bottom-4 -left-4 bg-yellow-400 w-16 h-16 rounded-full opacity-30"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-gray-800 mb-4">Contact Us</h2>
+          <div class="w-20 h-1 bg-blue-500 mx-auto"></div>
+        </div>
+
+        <div class="lg:grid lg:grid-cols-2 lg:gap-12">
+          <div class="mb-12 lg:mb-0">
+            <h3 class="text-2xl font-bold text-gray-800 mb-6">Get In Touch</h3>
+
+            <div class="space-y-6">
+              <div class="flex items-start">
+                <div class="flex-shrink-0 mt-1">
+                  <i class="fas fa-map-marker-alt text-blue-500 text-xl"></i>
+                </div>
+                <div class="ml-4">
+                  <h4 class="text-lg font-medium text-gray-800">Address</h4>
+                  <p class="text-gray-600">
+                    123 Solar Avenue, San Francisco, CA 94107
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <div class="flex-shrink-0 mt-1">
+                  <i class="fas fa-phone-alt text-blue-500 text-xl"></i>
+                </div>
+                <div class="ml-4">
+                  <h4 class="text-lg font-medium text-gray-800">Phone</h4>
+                  <p class="text-gray-600">(800) 123-4567</p>
+                  <p class="text-gray-600">Mon-Fri: 8am-6pm PST</p>
+                </div>
+              </div>
+
+              <div class="flex items-start">
+                <div class="flex-shrink-0 mt-1">
+                  <i class="fas fa-envelope text-blue-500 text-xl"></i>
+                </div>
+                <div class="ml-4">
+                  <h4 class="text-lg font-medium text-gray-800">Email</h4>
+                  <p class="text-gray-600">info@xsolarsolutions.com</p>
+                  <p class="text-gray-600">support@xsolarsolutions.com</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-10">
+              <h4 class="text-lg font-medium text-gray-800 mb-4">Follow Us</h4>
+              <div class="flex space-x-4">
+                <a
+                  href="#"
+                  class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center text-white hover:bg-blue-600 transition-all"
+                >
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a
+                  href="#"
+                  class="w-10 h-10 bg-blue-400 rounded-full flex items-center justify-center text-white hover:bg-blue-500 transition-all"
+                >
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a
+                  href="#"
+                  class="w-10 h-10 bg-pink-500 rounded-full flex items-center justify-center text-white hover:bg-pink-600 transition-all"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a
+                  href="#"
+                  class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center text-white hover:bg-blue-700 transition-all"
+                >
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a
+                  href="#"
+                  class="w-10 h-10 bg-red-500 rounded-full flex items-center justify-center text-white hover:bg-red-600 transition-all"
+                >
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-2xl font-bold text-gray-800 mb-6">
+              Send Us a Message
+            </h3>
+            <form class="space-y-6">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <label
+                    for="first-name"
+                    class="block text-sm font-medium text-gray-700 mb-1"
+                    >First Name</label
+                  >
+                  <input
+                    type="text"
+                    id="first-name"
+                    class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                  />
+                </div>
+                <div>
+                  <label
+                    for="last-name"
+                    class="block text-sm font-medium text-gray-700 mb-1"
+                    >Last Name</label
+                  >
+                  <input
+                    type="text"
+                    id="last-name"
+                    class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                  />
+                </div>
+              </div>
+              <div>
+                <label
+                  for="email"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                />
+              </div>
+              <div>
+                <label
+                  for="phone"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                  >Phone</label
+                >
+                <input
+                  type="tel"
+                  id="phone"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                />
+              </div>
+              <div>
+                <label
+                  for="subject"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                  >Subject</label
+                >
+                <select
+                  id="subject"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                >
+                  <option>General Inquiry</option>
+                  <option>Residential Solar</option>
+                  <option>Commercial Solar</option>
+                  <option>Maintenance</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div>
+                <label
+                  for="message"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                  >Message</label
+                >
+                <textarea
+                  id="message"
+                  rows="4"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                ></textarea>
+              </div>
+              <div>
+                <button
+                  type="submit"
+                  class="w-full bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-md text-lg font-medium transition-all"
+                >
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div>
+            <div class="flex items-center mb-4">
+              <i class="fas fa-solar-panel text-blue-500 text-3xl mr-2"></i>
+              <span class="text-xl font-bold">X Solar Solutions</span>
+            </div>
+            <p class="text-gray-400 mb-4">
+              Providing clean, renewable energy solutions for homes and
+              businesses across the nation.
+            </p>
+            <div class="flex space-x-4">
+              <a href="#" class="text-gray-400 hover:text-white transition-all">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white transition-all">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white transition-all">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white transition-all">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#home"
+                  class="text-gray-400 hover:text-white transition-all"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  class="text-gray-400 hover:text-white transition-all"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#services"
+                  class="text-gray-400 hover:text-white transition-all"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#advantages"
+                  class="text-gray-400 hover:text-white transition-all"
+                  >Advantages</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="text-gray-400 hover:text-white transition-all"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-bold mb-4">Services</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-all"
+                  >Residential Solar</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-all"
+                  >Commercial Solar</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-all"
+                  >Solar Maintenance</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-all"
+                  >Energy Storage</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-all"
+                  >EV Charging</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-bold mb-4">Newsletter</h4>
+            <p class="text-gray-400 mb-4">
+              Subscribe to our newsletter for the latest updates on solar
+              technology and special offers.
+            </p>
+            <form class="flex">
+              <input
+                type="email"
+                placeholder="Your email"
+                class="px-4 py-2 rounded-l-md focus:outline-none text-gray-800 w-full"
+              />
+              <button
+                type="submit"
+                class="bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-r-md transition-all"
+              >
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div
+          class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center"
+        >
+          <p class="text-gray-400 mb-4 md:mb-0">
+            &copy; 2023 X Solar Solutions. All rights reserved.
+          </p>
+          <div class="flex space-x-6">
+            <a href="#" class="text-gray-400 hover:text-white transition-all"
+              >Privacy Policy</a
+            >
+            <a href="#" class="text-gray-400 hover:text-white transition-all"
+              >Terms of Service</a
+            >
+            <a href="#" class="text-gray-400 hover:text-white transition-all"
+              >Sitemap</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile menu toggle
+      document
+        .getElementById("mobile-menu-button")
+        .addEventListener("click", function () {
+          const menu = document.getElementById("mobile-menu");
+          menu.classList.toggle("hidden");
+        });
+
+      // Smooth scrolling for navigation links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          // Close mobile menu if open
+          const mobileMenu = document.getElementById("mobile-menu");
+          if (!mobileMenu.classList.contains("hidden")) {
+            mobileMenu.classList.add("hidden");
+          }
+
+          // Scroll to target
+          const targetId = this.getAttribute("href");
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop - 80,
+              behavior: "smooth",
+            });
+
+            // Update active nav link
+            document.querySelectorAll(".nav-link").forEach((link) => {
+              link.classList.remove("active");
+            });
+            this.classList.add("active");
+          }
+        });
+      });
+
+      // Update active nav link on scroll
+      window.addEventListener("scroll", function () {
+        const sections = document.querySelectorAll("section");
+        let currentSection = "";
+
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop - 100;
+          if (pageYOffset >= sectionTop) {
+            currentSection = section.getAttribute("id");
+          }
+        });
+
+        document.querySelectorAll(".nav-link").forEach((link) => {
+          link.classList.remove("active");
+          if (link.getAttribute("href") === `#${currentSection}`) {
+            link.classList.add("active");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
